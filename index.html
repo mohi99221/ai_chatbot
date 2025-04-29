@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EDCP Hub Chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="chatbot-toggler">Chat</button>
+
+  <div class="chatbot">
+    <div class="chat-header">
+      <h2>EDCP Hub Chatbot</h2>
+      <button id="close-chatbot">&times;</button>
+    </div>
+
+    <div class="chat-body"></div>
+
+    <form class="chat-form">
+      <textarea class="message-input" placeholder="Type a message..."></textarea>
+
+      <div class="file-upload-wrapper">
+        <img src="" alt="File Preview">
+        <button type="button" id="file-cancel">×</button>
+      </div>
+
+      <div class="controls">
+        <button type="button" id="file-upload">📎</button>
+        <input type="file" id="file-input" accept="image/*" hidden>
+        <button type="submit" id="send-message">➤</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
